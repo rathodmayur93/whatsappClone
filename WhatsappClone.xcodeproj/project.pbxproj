@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7744C91A1EA141A6004A2AE1 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7744C9191EA141A6004A2AE1 /* GoogleToolboxForMac.framework */; };
+		7744C91C1EA141EA004A2AE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7744C91B1EA141EA004A2AE1 /* GoogleService-Info.plist */; };
+		7744C9201EA1486F004A2AE1 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7744C91D1EA1486F004A2AE1 /* GTMSessionFetcher.framework */; };
+		7744C9211EA1486F004A2AE1 /* JSQMessagesViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7744C91E1EA1486F004A2AE1 /* JSQMessagesViewController.framework */; };
+		7744C9221EA1486F004A2AE1 /* JSQSystemSoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7744C91F1EA1486F004A2AE1 /* JSQSystemSoundPlayer.framework */; };
+		7744C9241EA153B3004A2AE1 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7744C9231EA153B3004A2AE1 /* IQKeyboardManagerSwift.framework */; };
+		7744C9261EA15447004A2AE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744C9251EA15447004A2AE1 /* SignUpViewController.swift */; };
+		775BE5681EA13FA4007815BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BE5671EA13FA4007815BC /* AppDelegate.swift */; };
+		775BE56A1EA13FA4007815BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BE5691EA13FA4007815BC /* ViewController.swift */; };
+		775BE56D1EA13FA4007815BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775BE56B1EA13FA4007815BC /* Main.storyboard */; };
+		775BE5701EA13FA4007815BC /* WhatsappClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 775BE56E1EA13FA4007815BC /* WhatsappClone.xcdatamodeld */; };
+		775BE5721EA13FA4007815BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775BE5711EA13FA4007815BC /* Assets.xcassets */; };
+		775BE5751EA13FA4007815BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775BE5731EA13FA4007815BC /* LaunchScreen.storyboard */; };
+		775BE5801EA13FA4007815BC /* WhatsappCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BE57F1EA13FA4007815BC /* WhatsappCloneTests.swift */; };
+		77F47E2A1EA1F82100317C4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F47E291EA1F82100317C4D /* LoginViewController.swift */; };
+		D2DECB4C0D0A62F58997B972 /* Pods_WhatsappCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A606F17C5ABD2C4693E0AA0 /* Pods_WhatsappCloneTests.framework */; };
+		DC79207906DE26A44FAD9B06 /* Pods_WhatsappClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C991103BAC61B50A7BE8106 /* Pods_WhatsappClone.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		775BE57C1EA13FA4007815BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 775BE55C1EA13FA4007815BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 775BE5631EA13FA4007815BC;
+			remoteInfo = WhatsappClone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11F4F061B3AC94070EC75B28 /* Pods-WhatsappCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsappCloneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsappCloneTests/Pods-WhatsappCloneTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C991103BAC61B50A7BE8106 /* Pods_WhatsappClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsappClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7744C9191EA141A6004A2AE1 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "Pods/../build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
+		7744C91B1EA141EA004A2AE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7744C91D1EA1486F004A2AE1 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "Pods/../build/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
+		7744C91E1EA1486F004A2AE1 /* JSQMessagesViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQMessagesViewController.framework; path = "Pods/../build/Debug-iphoneos/JSQMessagesViewController/JSQMessagesViewController.framework"; sourceTree = "<group>"; };
+		7744C91F1EA1486F004A2AE1 /* JSQSystemSoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQSystemSoundPlayer.framework; path = "Pods/../build/Debug-iphoneos/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework"; sourceTree = "<group>"; };
+		7744C9231EA153B3004A2AE1 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/WhatsappClone-gdbwkksrdiaderezcddxfqsbbczh/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"; sourceTree = "<group>"; };
+		7744C9251EA15447004A2AE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		775BE5641EA13FA4007815BC /* WhatsappClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsappClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		775BE5671EA13FA4007815BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		775BE5691EA13FA4007815BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		775BE56C1EA13FA4007815BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		775BE56F1EA13FA4007815BC /* WhatsappClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhatsappClone.xcdatamodel; sourceTree = "<group>"; };
+		775BE5711EA13FA4007815BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		775BE5741EA13FA4007815BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		775BE5761EA13FA4007815BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775BE57B1EA13FA4007815BC /* WhatsappCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsappCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		775BE57F1EA13FA4007815BC /* WhatsappCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsappCloneTests.swift; sourceTree = "<group>"; };
+		775BE5811EA13FA4007815BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F47E291EA1F82100317C4D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7A606F17C5ABD2C4693E0AA0 /* Pods_WhatsappCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsappCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AF7029E46FA7D271EC04F83 /* Pods-WhatsappClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsappClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsappClone/Pods-WhatsappClone.release.xcconfig"; sourceTree = "<group>"; };
+		998F60ACC8A19B5FA889F101 /* Pods-WhatsappCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsappCloneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsappCloneTests/Pods-WhatsappCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2D99FCCC38BD7D02472DE6C /* Pods-WhatsappClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsappClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsappClone/Pods-WhatsappClone.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		775BE5611EA13FA4007815BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7744C9241EA153B3004A2AE1 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				7744C9201EA1486F004A2AE1 /* GTMSessionFetcher.framework in Frameworks */,
+				7744C9211EA1486F004A2AE1 /* JSQMessagesViewController.framework in Frameworks */,
+				7744C9221EA1486F004A2AE1 /* JSQSystemSoundPlayer.framework in Frameworks */,
+				7744C91A1EA141A6004A2AE1 /* GoogleToolboxForMac.framework in Frameworks */,
+				DC79207906DE26A44FAD9B06 /* Pods_WhatsappClone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775BE5781EA13FA4007815BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2DECB4C0D0A62F58997B972 /* Pods_WhatsappCloneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		775BE55B1EA13FA4007815BC = {
+			isa = PBXGroup;
+			children = (
+				775BE5661EA13FA4007815BC /* WhatsappClone */,
+				775BE57E1EA13FA4007815BC /* WhatsappCloneTests */,
+				775BE5651EA13FA4007815BC /* Products */,
+				DEE5FD30509F620911CE3E44 /* Pods */,
+				B04CE7FD5C59C2D3151FA07C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		775BE5651EA13FA4007815BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				775BE5641EA13FA4007815BC /* WhatsappClone.app */,
+				775BE57B1EA13FA4007815BC /* WhatsappCloneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		775BE5661EA13FA4007815BC /* WhatsappClone */ = {
+			isa = PBXGroup;
+			children = (
+				775BE5671EA13FA4007815BC /* AppDelegate.swift */,
+				775BE5691EA13FA4007815BC /* ViewController.swift */,
+				77F47E291EA1F82100317C4D /* LoginViewController.swift */,
+				7744C9251EA15447004A2AE1 /* SignUpViewController.swift */,
+				775BE5711EA13FA4007815BC /* Assets.xcassets */,
+				775BE56B1EA13FA4007815BC /* Main.storyboard */,
+				775BE5731EA13FA4007815BC /* LaunchScreen.storyboard */,
+				775BE5761EA13FA4007815BC /* Info.plist */,
+				7744C91B1EA141EA004A2AE1 /* GoogleService-Info.plist */,
+				775BE56E1EA13FA4007815BC /* WhatsappClone.xcdatamodeld */,
+			);
+			path = WhatsappClone;
+			sourceTree = "<group>";
+		};
+		775BE57E1EA13FA4007815BC /* WhatsappCloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				775BE57F1EA13FA4007815BC /* WhatsappCloneTests.swift */,
+				775BE5811EA13FA4007815BC /* Info.plist */,
+			);
+			path = WhatsappCloneTests;
+			sourceTree = "<group>";
+		};
+		B04CE7FD5C59C2D3151FA07C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7744C9231EA153B3004A2AE1 /* IQKeyboardManagerSwift.framework */,
+				7744C91D1EA1486F004A2AE1 /* GTMSessionFetcher.framework */,
+				7744C91E1EA1486F004A2AE1 /* JSQMessagesViewController.framework */,
+				7744C91F1EA1486F004A2AE1 /* JSQSystemSoundPlayer.framework */,
+				7744C9191EA141A6004A2AE1 /* GoogleToolboxForMac.framework */,
+				5C991103BAC61B50A7BE8106 /* Pods_WhatsappClone.framework */,
+				7A606F17C5ABD2C4693E0AA0 /* Pods_WhatsappCloneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEE5FD30509F620911CE3E44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2D99FCCC38BD7D02472DE6C /* Pods-WhatsappClone.debug.xcconfig */,
+				7AF7029E46FA7D271EC04F83 /* Pods-WhatsappClone.release.xcconfig */,
+				998F60ACC8A19B5FA889F101 /* Pods-WhatsappCloneTests.debug.xcconfig */,
+				11F4F061B3AC94070EC75B28 /* Pods-WhatsappCloneTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		775BE5631EA13FA4007815BC /* WhatsappClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775BE5841EA13FA4007815BC /* Build configuration list for PBXNativeTarget "WhatsappClone" */;
+			buildPhases = (
+				EB03565B5BC0996E2CF5B7B9 /* [CP] Check Pods Manifest.lock */,
+				775BE5601EA13FA4007815BC /* Sources */,
+				775BE5611EA13FA4007815BC /* Frameworks */,
+				775BE5621EA13FA4007815BC /* Resources */,
+				29FC319E0E05B48E8E41BB71 /* [CP] Embed Pods Frameworks */,
+				9A9C87D0625D48A8B7E48146 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatsappClone;
+			productName = WhatsappClone;
+			productReference = 775BE5641EA13FA4007815BC /* WhatsappClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		775BE57A1EA13FA4007815BC /* WhatsappCloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775BE5871EA13FA4007815BC /* Build configuration list for PBXNativeTarget "WhatsappCloneTests" */;
+			buildPhases = (
+				1F0D4B46BD25F9F1D7FE9622 /* [CP] Check Pods Manifest.lock */,
+				775BE5771EA13FA4007815BC /* Sources */,
+				775BE5781EA13FA4007815BC /* Frameworks */,
+				775BE5791EA13FA4007815BC /* Resources */,
+				084299389CC8CDD409B7F5E0 /* [CP] Embed Pods Frameworks */,
+				8CA0E7CBBDA0A337F9493266 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				775BE57D1EA13FA4007815BC /* PBXTargetDependency */,
+			);
+			name = WhatsappCloneTests;
+			productName = WhatsappCloneTests;
+			productReference = 775BE57B1EA13FA4007815BC /* WhatsappCloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		775BE55C1EA13FA4007815BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = mayur;
+				TargetAttributes = {
+					775BE5631EA13FA4007815BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					775BE57A1EA13FA4007815BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 775BE5631EA13FA4007815BC;
+					};
+				};
+			};
+			buildConfigurationList = 775BE55F1EA13FA4007815BC /* Build configuration list for PBXProject "WhatsappClone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 775BE55B1EA13FA4007815BC;
+			productRefGroup = 775BE5651EA13FA4007815BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				775BE5631EA13FA4007815BC /* WhatsappClone */,
+				775BE57A1EA13FA4007815BC /* WhatsappCloneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		775BE5621EA13FA4007815BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775BE5751EA13FA4007815BC /* LaunchScreen.storyboard in Resources */,
+				7744C91C1EA141EA004A2AE1 /* GoogleService-Info.plist in Resources */,
+				775BE5721EA13FA4007815BC /* Assets.xcassets in Resources */,
+				775BE56D1EA13FA4007815BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775BE5791EA13FA4007815BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		084299389CC8CDD409B7F5E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatsappCloneTests/Pods-WhatsappCloneTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F0D4B46BD25F9F1D7FE9622 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		29FC319E0E05B48E8E41BB71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatsappClone/Pods-WhatsappClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CA0E7CBBDA0A337F9493266 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatsappCloneTests/Pods-WhatsappCloneTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A9C87D0625D48A8B7E48146 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatsappClone/Pods-WhatsappClone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB03565B5BC0996E2CF5B7B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		775BE5601EA13FA4007815BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775BE56A1EA13FA4007815BC /* ViewController.swift in Sources */,
+				775BE5681EA13FA4007815BC /* AppDelegate.swift in Sources */,
+				7744C9261EA15447004A2AE1 /* SignUpViewController.swift in Sources */,
+				77F47E2A1EA1F82100317C4D /* LoginViewController.swift in Sources */,
+				775BE5701EA13FA4007815BC /* WhatsappClone.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775BE5771EA13FA4007815BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775BE5801EA13FA4007815BC /* WhatsappCloneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		775BE57D1EA13FA4007815BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 775BE5631EA13FA4007815BC /* WhatsappClone */;
+			targetProxy = 775BE57C1EA13FA4007815BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		775BE56B1EA13FA4007815BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				775BE56C1EA13FA4007815BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		775BE5731EA13FA4007815BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				775BE5741EA13FA4007815BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		775BE5821EA13FA4007815BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		775BE5831EA13FA4007815BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		775BE5851EA13FA4007815BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D99FCCC38BD7D02472DE6C /* Pods-WhatsappClone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GoogleToolboxForMac",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GTMSessionFetcher",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/JSQMessagesViewController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/JSQSystemSoundPlayer",
+				);
+				INFOPLIST_FILE = WhatsappClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayur.WhatsappClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		775BE5861EA13FA4007815BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AF7029E46FA7D271EC04F83 /* Pods-WhatsappClone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GoogleToolboxForMac",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GTMSessionFetcher",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/JSQMessagesViewController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/JSQSystemSoundPlayer",
+				);
+				INFOPLIST_FILE = WhatsappClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayur.WhatsappClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		775BE5881EA13FA4007815BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 998F60ACC8A19B5FA889F101 /* Pods-WhatsappCloneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WhatsappCloneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayur.WhatsappCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatsappClone.app/WhatsappClone";
+			};
+			name = Debug;
+		};
+		775BE5891EA13FA4007815BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F4F061B3AC94070EC75B28 /* Pods-WhatsappCloneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WhatsappCloneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayur.WhatsappCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatsappClone.app/WhatsappClone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		775BE55F1EA13FA4007815BC /* Build configuration list for PBXProject "WhatsappClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775BE5821EA13FA4007815BC /* Debug */,
+				775BE5831EA13FA4007815BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775BE5841EA13FA4007815BC /* Build configuration list for PBXNativeTarget "WhatsappClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775BE5851EA13FA4007815BC /* Debug */,
+				775BE5861EA13FA4007815BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775BE5871EA13FA4007815BC /* Build configuration list for PBXNativeTarget "WhatsappCloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775BE5881EA13FA4007815BC /* Debug */,
+				775BE5891EA13FA4007815BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		775BE56E1EA13FA4007815BC /* WhatsappClone.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				775BE56F1EA13FA4007815BC /* WhatsappClone.xcdatamodel */,
+			);
+			currentVersion = 775BE56F1EA13FA4007815BC /* WhatsappClone.xcdatamodel */;
+			path = WhatsappClone.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 775BE55C1EA13FA4007815BC /* Project object */;
+}
