@@ -184,6 +184,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="nwC-81-1QH" eventType="touchUpInside" id="IhQ-8W-sAD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfm-1H-kbE">
                                 <rect key="frame" x="16" y="108" width="288" height="59"/>
@@ -208,6 +211,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Za8-N7-Kb8"/>
+                    <connections>
+                        <outlet property="loginBT" destination="Gzk-mR-LPW" id="2IG-zF-lsB"/>
+                        <outlet property="usernameTF" destination="LrQ-zG-7vM" id="vUs-gh-JMe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FtY-3W-C5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
