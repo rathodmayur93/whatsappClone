@@ -100,7 +100,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     func openCameraButton() {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
-            var imagePicker             = UIImagePickerController()
+            let imagePicker             = UIImagePickerController()
             imagePicker.delegate        = self
             imagePicker.sourceType      = UIImagePickerControllerSourceType.camera;
             imagePicker.allowsEditing   = false
@@ -118,10 +118,6 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         dismiss(animated: true, completion: nil)
         var data        = NSData()
         data            = UIImagePNGRepresentation(profileIV.image!)! as NSData
-        
-        let strBase64           = data.base64EncodedString()
-        //base64Encoded           = strBase64.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-        // set upload path
         
         let storageRef   = FIRStorage.storage().reference()
         let profilePhoto = storageRef.child("profile_photo/")

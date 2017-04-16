@@ -94,6 +94,36 @@
             </objects>
             <point key="canvasLocation" x="2109.375" y="120.4225352112676"/>
         </scene>
+        <!--Chat Screen View Controller-->
+        <scene sceneID="ZwM-fV-fmV">
+            <objects>
+                <viewController storyboardIdentifier="ChatScreenViewController" id="EoH-v2-3Wi" customClass="ChatScreenViewController" customModule="WhatsappClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mck-sb-pHb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ja8-Jc-A0k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ntJ-cA-TZ8" customClass="Ch">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRn-RW-OJX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XRn-RW-OJX" firstAttribute="top" secondItem="ntJ-cA-TZ8" secondAttribute="top" id="0km-zi-8bE"/>
+                            <constraint firstAttribute="trailing" secondItem="XRn-RW-OJX" secondAttribute="trailing" id="fyf-fU-0Fp"/>
+                            <constraint firstItem="XRn-RW-OJX" firstAttribute="leading" secondItem="ntJ-cA-TZ8" secondAttribute="leading" id="iwg-9E-xEh"/>
+                            <constraint firstItem="Ja8-Jc-A0k" firstAttribute="top" secondItem="XRn-RW-OJX" secondAttribute="bottom" constant="502" id="tCy-uT-oXu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdg-Pc-03Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2936" y="120"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="oZz-8D-W8q">
             <objects>
@@ -193,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nX-ZK-VHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4764.375" y="723.59154929577471"/>
+            <point key="canvasLocation" x="2936" y="884"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="30r-Gb-Vaa">
@@ -277,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FtY-3W-C5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4031.25" y="723.59154929577471"/>
+            <point key="canvasLocation" x="2109" y="884"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DEu-uh-cH0">
@@ -295,7 +325,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Idn-0K-tKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3228.75" y="723.59154929577471"/>
+            <point key="canvasLocation" x="1311" y="885"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Td-Cs-BpJ">

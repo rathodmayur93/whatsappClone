@@ -11,6 +11,7 @@
 		770D2BB81EA28FA9003D8A88 /* UiUtillity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770D2BB71EA28FA9003D8A88 /* UiUtillity.swift */; };
 		770D2BBA1EA290BA003D8A88 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770D2BB91EA290BA003D8A88 /* AppColors.swift */; };
 		771C18F61EA357940024EAC5 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C18F51EA357940024EAC5 /* UserListTableViewCell.swift */; };
+		771C18F81EA360F70024EAC5 /* ChatScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C18F71EA360F70024EAC5 /* ChatScreenViewController.swift */; };
 		7744C91A1EA141A6004A2AE1 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7744C9191EA141A6004A2AE1 /* GoogleToolboxForMac.framework */; };
 		7744C91C1EA141EA004A2AE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7744C91B1EA141EA004A2AE1 /* GoogleService-Info.plist */; };
 		7744C9201EA1486F004A2AE1 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7744C91D1EA1486F004A2AE1 /* GTMSessionFetcher.framework */; };
@@ -47,6 +48,7 @@
 		770D2BB71EA28FA9003D8A88 /* UiUtillity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiUtillity.swift; sourceTree = "<group>"; };
 		770D2BB91EA290BA003D8A88 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		771C18F51EA357940024EAC5 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		771C18F71EA360F70024EAC5 /* ChatScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatScreenViewController.swift; sourceTree = "<group>"; };
 		7744C9191EA141A6004A2AE1 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "Pods/../build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
 		7744C91B1EA141EA004A2AE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7744C91D1EA1486F004A2AE1 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "Pods/../build/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				775BE5691EA13FA4007815BC /* ViewController.swift */,
 				77F47E291EA1F82100317C4D /* LoginViewController.swift */,
 				7744C9251EA15447004A2AE1 /* SignUpViewController.swift */,
+				771C18F71EA360F70024EAC5 /* ChatScreenViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771C18F81EA360F70024EAC5 /* ChatScreenViewController.swift in Sources */,
 				770D2BB41EA2860E003D8A88 /* UserInfoModel.swift in Sources */,
 				771C18F61EA357940024EAC5 /* UserListTableViewCell.swift in Sources */,
 				775BE56A1EA13FA4007815BC /* ViewController.swift in Sources */,

@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet var userListTableView: UITableView!
-    
+    @IBOutlet var userListTableView : UITableView!
+    var ref                         : FIRDatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let chatScreenVC                = ChatScreenViewController()
+        chatScreenVC.senderDisplayName  = userInfoList[indexPath.row].firstName
+        //chatScreenVC.user               = userInfoList[indexPath.row]
+       // chatScreenVC.userRef            = self.ref
+        
+        uiutil.navigateToScreen(identifierName: "ChatScreenViewController", fromController: self)
         
     }
 
