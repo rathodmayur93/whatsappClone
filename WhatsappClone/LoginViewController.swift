@@ -64,7 +64,7 @@ class LoginViewController: UIViewController {
                 let userInfo          = UserInfoModel()
                 
                 let userName          = userInfoDict["user_name"] as! String             // Getting Username
-                
+                userInfo.uniqueId     = id                                               // Getting Unique Id
                 userInfo.firstName    = userInfoDict["first_name"] as! String            // Getting First Name
                 userInfo.lastName     = userInfoDict["last_name"] as! String             // Getting Last Name
                 userInfo.userName     = userName

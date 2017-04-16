@@ -40,8 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let chatScreenVC                = ChatScreenViewController()
         chatScreenVC.senderDisplayName  = userInfoList[indexPath.row].firstName
-        //chatScreenVC.user               = userInfoList[indexPath.row]
-       // chatScreenVC.userRef            = self.ref
+        chatScreenVC.userRef            = FIRDatabase.database().reference().child(userInfoList[0].uniqueId)
         
         uiutil.navigateToScreen(identifierName: "ChatScreenViewController", fromController: self)
         

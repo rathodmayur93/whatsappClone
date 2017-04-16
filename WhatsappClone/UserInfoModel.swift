@@ -13,5 +13,6 @@ class UserInfoModel {
     var firstName   = ""
     var lastName    = ""
     var userName    = ""
+    var uniqueId    = ""
 
 }
