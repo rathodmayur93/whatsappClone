@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatsappClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="WhatsappClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,19 +22,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9og-pF-cKu">
-                                <rect key="frame" x="125" y="274" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1LB-gP-2sI">
+                                <rect key="frame" x="0.0" y="66" width="320" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="502" id="YJ0-Yh-Dt5"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserListTableViewCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="59" id="MoC-Ec-glq" customClass="UserListTableViewCell" customModule="WhatsappClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="59"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MoC-Ec-glq" id="kJu-wA-KRz">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_indicator_default_user_40" translatesAutoresizingMaskIntoConstraints="NO" id="vcV-8P-f1M">
+                                                    <rect key="frame" x="8" y="8" width="42" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="fTy-fA-Y1S"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mayur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYH-5b-vBP">
+                                                    <rect key="frame" x="58" y="21" width="220" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vcV-8P-f1M" firstAttribute="top" secondItem="kJu-wA-KRz" secondAttribute="topMargin" id="6jd-Rk-FGf"/>
+                                                <constraint firstItem="vcV-8P-f1M" firstAttribute="bottom" secondItem="kJu-wA-KRz" secondAttribute="bottomMargin" id="AOU-6S-Wkv"/>
+                                                <constraint firstItem="BYH-5b-vBP" firstAttribute="leading" secondItem="vcV-8P-f1M" secondAttribute="trailing" constant="8" symbolic="YES" id="Iax-Os-d2g"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BYH-5b-vBP" secondAttribute="trailing" constant="34" id="WFh-H3-ToD"/>
+                                                <constraint firstItem="vcV-8P-f1M" firstAttribute="centerY" secondItem="BYH-5b-vBP" secondAttribute="centerY" id="Z9q-Ag-DEc"/>
+                                                <constraint firstItem="vcV-8P-f1M" firstAttribute="leading" secondItem="kJu-wA-KRz" secondAttribute="leadingMargin" id="zZt-gs-5SC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="userNameLabel" destination="BYH-5b-vBP" id="9RL-eb-5iq"/>
+                                            <outlet property="userProfileIV" destination="vcV-8P-f1M" id="GHE-Pp-cKC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="C5Q-De-bej"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="EMl-zZ-egI"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5l-kk-BQn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y5l-kk-BQn" firstAttribute="trailing" secondItem="1LB-gP-2sI" secondAttribute="trailing" id="MiU-u2-JAv"/>
+                            <constraint firstItem="Y5l-kk-BQn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OWQ-dz-ioQ"/>
+                            <constraint firstItem="Y5l-kk-BQn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R7y-dC-mnV"/>
+                            <constraint firstItem="Y5l-kk-BQn" firstAttribute="leading" secondItem="1LB-gP-2sI" secondAttribute="leading" id="fab-Jg-TxM"/>
+                            <constraint firstItem="1LB-gP-2sI" firstAttribute="top" secondItem="Y5l-kk-BQn" secondAttribute="bottom" id="hsg-5u-Pkm"/>
+                            <constraint firstAttribute="trailing" secondItem="Y5l-kk-BQn" secondAttribute="trailing" id="mwh-rc-7C4"/>
+                            <constraint firstItem="1LB-gP-2sI" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="pTk-LF-co5"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mTw-ZV-XV7"/>
+                    <connections>
+                        <outlet property="userListTableView" destination="1LB-gP-2sI" id="2bF-go-ier"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2109.375" y="120.4225352112676"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="oZz-8D-W8q">
@@ -134,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nX-ZK-VHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2769.375" y="723.59154929577471"/>
+            <point key="canvasLocation" x="4764.375" y="723.59154929577471"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="30r-Gb-Vaa">
@@ -218,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FtY-3W-C5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2036.25" y="723.59154929577471"/>
+            <point key="canvasLocation" x="4031.25" y="723.59154929577471"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DEu-uh-cH0">
@@ -236,7 +295,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Idn-0K-tKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1234" y="724"/>
+            <point key="canvasLocation" x="3228.75" y="723.59154929577471"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Td-Cs-BpJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hE7-Kn-1nm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FQp-X5-vD8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="x6L-mc-7Mi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSp-eh-3Gr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1311" y="120"/>
         </scene>
     </scenes>
     <resources>

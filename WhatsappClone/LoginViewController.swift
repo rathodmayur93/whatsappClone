@@ -12,6 +12,9 @@ import Firebase
 var userInfoList     = [UserInfoModel]()
 let uiutil           = UiUtillity()
 
+var userNameArray    : [String] = []
+var loginUserName    = ""
+
 class LoginViewController: UIViewController {
 
     @IBOutlet var usernameTF    : UITextField!
@@ -70,12 +73,16 @@ class LoginViewController: UIViewController {
                 userInfoList.append(userInfo)
                 
                 if(userName == self.usernameTF.text!){
+                    loginUserName = userName
                     self.isValidUsername = true
+                }else{
+                    userNameArray.append(userInfoDict["first_name"] as! String)
                 }
             }
             
             if(self.isValidUsername){
                 uiutil.hideIndicatorLoader()
+                uiutil.navigateToScreen(identifierName: "ViewController", fromController: self)
                 print("Let's go and have chat")
             }else{
                 uiutil.hideIndicatorLoader()
