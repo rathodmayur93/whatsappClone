@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+var selectedUserIndex = 0
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var userListTableView : UITableView!
@@ -31,7 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         let cell = userListTableView.dequeueReusableCell(withIdentifier: "Cell") as! UserListTableViewCell
-        cell.userNameLabel.text = userNameArray[indexPath.row]
+        cell.userNameLabel.text = userNameArray[indexPath.row].firstName
         
         return cell
     }
@@ -41,6 +42,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let chatScreenVC                = ChatScreenViewController()
         chatScreenVC.senderDisplayName  = userInfoList[indexPath.row].firstName
         chatScreenVC.userRef            = FIRDatabase.database().reference().child(userInfoList[0].uniqueId)
+        
+        selectedUserIndex = indexPath.row
         
         uiutil.navigateToScreen(identifierName: "ChatScreenViewController", fromController: self)
         

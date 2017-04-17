@@ -12,8 +12,10 @@ import Firebase
 var userInfoList     = [UserInfoModel]()
 let uiutil           = UiUtillity()
 
-var userNameArray    : [String] = []
+var userNameArray    = [UserDetail]()
 var loginUserName    = ""
+var userFirstName    = ""
+var loginUserUniqueId = ""
 
 class LoginViewController: UIViewController {
 
@@ -24,25 +26,22 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    
     }
 
     @IBAction func loginAction(_ sender: Any) {
         
         uiutil.showIndicatorLoader()
         userInfoList.removeAll()
+        userNameArray.removeAll()
         retrieveUserInfoFromFirebase()
     }
     
     
     func retrieveUserInfoFromFirebase(){
-    
-        
         
         let ref = FIRDatabase.database().reference() // your ref ie.root.child("users").child("user_detail")
         
@@ -56,7 +55,7 @@ class LoginViewController: UIViewController {
                 }
                 
                 let id = taskSnapshot.key                                       // Retrieving Child Auto Id From Firebase Database
-                
+                print("User Unique Id \(id)")
                 let userDict = snapshot.value as? NSDictionary                  // Getting User Info Data
                 
                 let userInfoDict = userDict?.value(forKeyPath: "\(id).user_info") as! NSDictionary
@@ -64,8 +63,10 @@ class LoginViewController: UIViewController {
                 let userInfo          = UserInfoModel()
                 
                 let userName          = userInfoDict["user_name"] as! String             // Getting Username
+                let firstName         = userInfoDict["first_name"] as! String
+               
                 userInfo.uniqueId     = id                                               // Getting Unique Id
-                userInfo.firstName    = userInfoDict["first_name"] as! String            // Getting First Name
+                userInfo.firstName    = firstName                                        // Getting First Name
                 userInfo.lastName     = userInfoDict["last_name"] as! String             // Getting Last Name
                 userInfo.userName     = userName
                 // print("Username \(username) & \(firstName) & \(lastName)")
@@ -73,10 +74,17 @@ class LoginViewController: UIViewController {
                 userInfoList.append(userInfo)
                 
                 if(userName == self.usernameTF.text!){
-                    loginUserName = userName
+                    loginUserName       = userName
+                    userFirstName       = firstName
+                    loginUserUniqueId   = id
                     self.isValidUsername = true
                 }else{
-                    userNameArray.append(userInfoDict["first_name"] as! String)
+                    
+                    let userDetail = UserDetail()
+                    userDetail.firstName = userInfoDict["first_name"] as! String
+                    userDetail.uniqueId  = id
+                    userDetail.userName  = userName
+                    userNameArray.append(userDetail)
                 }
             }
             

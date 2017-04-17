@@ -29,11 +29,11 @@
                                     <constraint firstAttribute="height" constant="502" id="YJ0-Yh-Dt5"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserListTableViewCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="59" id="MoC-Ec-glq" customClass="UserListTableViewCell" customModule="WhatsappClone" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserListTableViewCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="59" id="MoC-Ec-glq" customClass="UserListTableViewCell" customModule="WhatsappClone" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="59"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MoC-Ec-glq" id="kJu-wA-KRz">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="58"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_indicator_default_user_40" translatesAutoresizingMaskIntoConstraints="NO" id="vcV-8P-f1M">
@@ -43,7 +43,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mayur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYH-5b-vBP">
-                                                    <rect key="frame" x="58" y="21" width="220" height="17"/>
+                                                    <rect key="frame" x="58" y="21" width="187" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -109,16 +109,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRn-RW-OJX">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="1Ty-az-Psq"/>
+                                    <constraint firstAttribute="height" constant="66" id="vqT-yd-Qjw"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XRn-RW-OJX" firstAttribute="top" secondItem="ntJ-cA-TZ8" secondAttribute="top" id="0km-zi-8bE"/>
-                            <constraint firstAttribute="trailing" secondItem="XRn-RW-OJX" secondAttribute="trailing" id="fyf-fU-0Fp"/>
-                            <constraint firstItem="XRn-RW-OJX" firstAttribute="leading" secondItem="ntJ-cA-TZ8" secondAttribute="leading" id="iwg-9E-xEh"/>
-                            <constraint firstItem="Ja8-Jc-A0k" firstAttribute="top" secondItem="XRn-RW-OJX" secondAttribute="bottom" constant="502" id="tCy-uT-oXu"/>
+                            <constraint firstItem="XRn-RW-OJX" firstAttribute="top" secondItem="ntJ-cA-TZ8" secondAttribute="top" id="C7A-MS-FF6"/>
+                            <constraint firstItem="XRn-RW-OJX" firstAttribute="centerX" secondItem="ntJ-cA-TZ8" secondAttribute="centerX" id="LGI-Pm-cG6"/>
+                            <constraint firstAttribute="trailing" secondItem="XRn-RW-OJX" secondAttribute="trailing" id="ddr-JU-P1Q"/>
+                            <constraint firstItem="XRn-RW-OJX" firstAttribute="leading" secondItem="ntJ-cA-TZ8" secondAttribute="leading" id="hxW-xb-dEH"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wKW-Yp-Vdu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdg-Pc-03Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,6 +12,8 @@
 		770D2BBA1EA290BA003D8A88 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770D2BB91EA290BA003D8A88 /* AppColors.swift */; };
 		771C18F61EA357940024EAC5 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C18F51EA357940024EAC5 /* UserListTableViewCell.swift */; };
 		771C18F81EA360F70024EAC5 /* ChatScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C18F71EA360F70024EAC5 /* ChatScreenViewController.swift */; };
+		771C18FA1EA394D30024EAC5 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C18F91EA394D30024EAC5 /* UserDetail.swift */; };
+		771C18FD1EA3A17A0024EAC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771C18FB1EA3A17A0024EAC5 /* Main.storyboard */; };
 		7744C91A1EA141A6004A2AE1 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7744C9191EA141A6004A2AE1 /* GoogleToolboxForMac.framework */; };
 		7744C91C1EA141EA004A2AE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7744C91B1EA141EA004A2AE1 /* GoogleService-Info.plist */; };
 		7744C9201EA1486F004A2AE1 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7744C91D1EA1486F004A2AE1 /* GTMSessionFetcher.framework */; };
@@ -21,7 +23,6 @@
 		7744C9261EA15447004A2AE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744C9251EA15447004A2AE1 /* SignUpViewController.swift */; };
 		775BE5681EA13FA4007815BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BE5671EA13FA4007815BC /* AppDelegate.swift */; };
 		775BE56A1EA13FA4007815BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BE5691EA13FA4007815BC /* ViewController.swift */; };
-		775BE56D1EA13FA4007815BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775BE56B1EA13FA4007815BC /* Main.storyboard */; };
 		775BE5701EA13FA4007815BC /* WhatsappClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 775BE56E1EA13FA4007815BC /* WhatsappClone.xcdatamodeld */; };
 		775BE5721EA13FA4007815BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775BE5711EA13FA4007815BC /* Assets.xcassets */; };
 		775BE5751EA13FA4007815BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775BE5731EA13FA4007815BC /* LaunchScreen.storyboard */; };
@@ -49,6 +50,8 @@
 		770D2BB91EA290BA003D8A88 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		771C18F51EA357940024EAC5 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
 		771C18F71EA360F70024EAC5 /* ChatScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatScreenViewController.swift; sourceTree = "<group>"; };
+		771C18F91EA394D30024EAC5 /* UserDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		771C18FC1EA3A17A0024EAC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7744C9191EA141A6004A2AE1 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "Pods/../build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
 		7744C91B1EA141EA004A2AE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7744C91D1EA1486F004A2AE1 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "Pods/../build/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
@@ -59,7 +62,6 @@
 		775BE5641EA13FA4007815BC /* WhatsappClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsappClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		775BE5671EA13FA4007815BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		775BE5691EA13FA4007815BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		775BE56C1EA13FA4007815BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		775BE56F1EA13FA4007815BC /* WhatsappClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhatsappClone.xcdatamodel; sourceTree = "<group>"; };
 		775BE5711EA13FA4007815BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		775BE5741EA13FA4007815BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				770D2BB31EA2860E003D8A88 /* UserInfoModel.swift */,
+				771C18F91EA394D30024EAC5 /* UserDetail.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -148,7 +151,7 @@
 				770D2BB91EA290BA003D8A88 /* AppColors.swift */,
 				771C18F51EA357940024EAC5 /* UserListTableViewCell.swift */,
 				775BE5711EA13FA4007815BC /* Assets.xcassets */,
-				775BE56B1EA13FA4007815BC /* Main.storyboard */,
+				771C18FB1EA3A17A0024EAC5 /* Main.storyboard */,
 				775BE5731EA13FA4007815BC /* LaunchScreen.storyboard */,
 				775BE5761EA13FA4007815BC /* Info.plist */,
 				7744C91B1EA141EA004A2AE1 /* GoogleService-Info.plist */,
@@ -283,7 +286,7 @@
 				775BE5751EA13FA4007815BC /* LaunchScreen.storyboard in Resources */,
 				7744C91C1EA141EA004A2AE1 /* GoogleService-Info.plist in Resources */,
 				775BE5721EA13FA4007815BC /* Assets.xcassets in Resources */,
-				775BE56D1EA13FA4007815BC /* Main.storyboard in Resources */,
+				771C18FD1EA3A17A0024EAC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +407,7 @@
 				770D2BBA1EA290BA003D8A88 /* AppColors.swift in Sources */,
 				77F47E2A1EA1F82100317C4D /* LoginViewController.swift in Sources */,
 				775BE5701EA13FA4007815BC /* WhatsappClone.xcdatamodeld in Sources */,
+				771C18FA1EA394D30024EAC5 /* UserDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,10 +430,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		775BE56B1EA13FA4007815BC /* Main.storyboard */ = {
+		771C18FB1EA3A17A0024EAC5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				775BE56C1EA13FA4007815BC /* Base */,
+				771C18FC1EA3A17A0024EAC5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
